@@ -13,7 +13,7 @@ jobs:
     steps:
       - run: |
           echo "Hello world from ${{ github.actor }}."
-          echo "Current branch is '${{ github.ref }}'."
+          echo "Current branch is '${{ github.ref }}' in Environment: ${{ vars.ENVIRONMENT }}  ."
           echo "Hello ${{ vars.WHO_TO_GREET }} 👋 from ${{ github.actor }}." 
           echo "My 1st secret is 🤫 ${{ secrets.MY_SECRET_01 }}."
           echo "My 2nd secret is 🤫 ${{ secrets.MY_SECRET_02 }}."
