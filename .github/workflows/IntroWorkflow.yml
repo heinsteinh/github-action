@@ -16,7 +16,4 @@ jobs:
           echo "Current branch is '${{ github.ref }}'."
       - name: Checkout
         uses: actions/checkout@v4.1.0
-      - uses: ActionsInAction/HelloWorld@v1
-        with:
-          WhoToGreet: Wheezy
       - run: tree
