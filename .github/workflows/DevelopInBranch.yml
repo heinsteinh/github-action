@@ -18,4 +18,4 @@ jobs:
             echo "Workflow triggered by event '${{ github.event_name }}'."
             echo "Workflow triggered by actor '${{ github.actor}}''."
 
-      - run: echo "${{ github.event.pull_request.title }}"
+      - run: echo "PR title is '${{ github.event.pull_request.title}}'."
